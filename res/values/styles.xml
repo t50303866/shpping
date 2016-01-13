@@ -1,0 +1,56 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+ 			<!-- android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:padding="3dp"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="23sp" 
+             android:gravity="center"-->
+            <style name="myText">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:layout_weight">1</item>
+                <item name="android:padding">3dp</item>
+                <item name="android:textSize">23sp</item>
+                <item name="android:gravity">center</item>
+            </style>
+            
+       <!--   android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:background="#f00"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="员工列表"
+        android:textSize="30sp" -->
+       <style name="myTitle">
+           <item name="android:layout_width">match_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:layout_alignParentTop">true</item>
+           <item name="android:background">#f00</item>
+           <item name="android:gravity">center_horizontal</item>
+           <item name="android:padding">5dp</item>
+           <item name="android:textSize">30sp</item>
+       </style>
+</resources>

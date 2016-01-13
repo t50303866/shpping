@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListEmpActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/myTitle"
+        android:text="员工列表"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_emp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/myText"
+            android:text="ID" />
+
+        <TextView
+            style="@style/myText"
+            android:text="姓名" />
+
+        <TextView
+            style="@style/myText"
+            android:text="工资" />
+
+        <TextView
+            style="@style/myText"
+            android:text="年龄" />
+
+        <TextView
+            style="@style/myText"
+            android:text="性别" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_emp"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_add_emp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="+"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:onClick="doClick"
+         />
+
+</RelativeLayout>
